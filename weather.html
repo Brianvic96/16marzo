@@ -47,7 +47,7 @@
 </div>
 <script>
 var request = new XMLHttpRequest();
-request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=managua&units=metric&appid=d101bdc568775b08f59259fd155072ff', true);
+request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=managua&units=metric&appid=d101bdc568775b08f59259fd155072ff', true);
 request.onload = function () {
   var data = JSON.parse(this.response);
   var lat = data.coord.lat;
